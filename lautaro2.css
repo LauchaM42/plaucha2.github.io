@@ -1,0 +1,137 @@
+/* Importamos el tipo de letra "Goldman" y "Press Start 2P" de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Silkscreen&family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+/* Hacemos un reset a todos los espacios que deja el navegador por defecto */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos principales */
+h2 {
+  font-size: 1.8rem; /* tamaño 16 píxeles por 1.8, donde rem = 16px */
+  text-align: center;
+  text-transform: uppercase; /* transforma todas las letras de h2 en mayúsculas */
+  font-weight: 500; /* ancho de la letra */
+  padding-bottom: 50px; /* deja un espacio por debajo de 50px */
+  font-family: "Orbitron", sans-serif; /* tipo de letra que importamos de google fonts */
+  color: #828282;
+}
+
+h3 {
+  font-size: 1.6rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  font-weight: 400;
+  font-family: "Orbitron", sans-serif;
+  color: #828282;
+}
+
+p {
+  font-size: 3rem;
+  text-align: center;
+  margin: 100px 0; /* margen superior e inferior de 10px y margen izquierda y derecha de 0 puntos */
+  line-height: 1.7em;
+  font-weight: 400;
+  color: #FFFFFF; /* salto de línea */
+}
+
+a {
+  text-decoration: none; /* enlaces sin la línea que tienen por defecto */
+}
+
+/* Utility Classes */
+.container {
+  margin: auto; /* 0px de margen vertical, centrado horizontalmente */
+  max-width: 1300px; /* coloca el ancho de 1300px como valor máximo del container */
+  overflow: auto;
+  padding: 0 20px; /* crea un espacio en los bordes */
+}
+
+.large {
+  font-size: 20px;
+}
+
+.texto-contacto {
+  font-size: 16px;
+}
+
+.medium {
+  font-size: 19px;
+}
+
+/* Navbar */
+#navbar {
+  overflow: auto; /* define lo que hace si el tamaño es muy grande */
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#navbar a {
+  color: #000; /* color del enlace de color negro */
+}
+
+#navbar .logo {
+  float: left; /* posiciona a la izquierda del contenedor */
+  padding-top: 12px;
+}
+
+#navbar img {
+  height: 120px;
+}
+
+#navbar ul {
+  list-style: none; /* le quitamos los puntos a la lista no ordenada */
+  float: right; /* mandamos el menú a la derecha del contenedor */
+}
+
+#navbar ul li {
+  float: left; /* en vez de listarse los list items (li) en vertical, se tienen que poner juntos en la misma línea */
+}
+
+#navbar ul li a {
+  display: block;
+  padding: 20px;
+  text-align: center;
+  font-size: 26px;
+  font-family: "Anton", sans-serif;
+  color: #FF0000;
+}
+
+#showcase {	
+background-image: url("img/sabias que.png");
+background-repeat: no-repeat;
+background-position: center;
+ /* Escala la imagen (mientras se preserva su ratio) al tamaño más pequeño posible para llenar el contenedor */
+height: 550px; /* altura de la foto principal */
+text-align: center;
+padding: 100px;
+
+/* About */
+.about {
+  margin: auto;
+  padding: 80px 0;
+  background: #f9f9f9; /* fondo color gris */
+}
+
+.about-row {
+  margin: auto;
+  display: flex;
+}
+
+
+.imagen {
+  background-image: url("img/video.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+   /* Escala la imagen (mientras se preserva su ratio) al tamaño más pequeño posible para llenar el contenedor */
+  height: 25000px; /* altura de la foto principal */
+  text-align: center;
+  padding: 20000px;
+}
+}
